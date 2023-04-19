@@ -1,0 +1,3 @@
+admin user: root
+admin password:1qaz
+admin email: root@mail.com
