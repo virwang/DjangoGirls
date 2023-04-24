@@ -3,7 +3,8 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.http import HttpResponse
-from .models import Post,Trip
+from .models import Post,Trip,Activity
+
 
 # 靜態版，no css etc
 # def hello_world(request):
@@ -31,3 +32,7 @@ def post_detail(request, pk):
 def trip(request):
     trip = Trip.objects.all()
     return render(request,'trip.html',{'trip':trip})
+
+def activity(request):
+    activity = Activity.objects.all()
+    return render(request,'activity.html',{'activity':activity})
